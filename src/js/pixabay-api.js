@@ -58,7 +58,7 @@ function checkInputValidity() {                   // Перевірка валі
           position: 'topCenter',
         });
       } else {
-        renderImg(images);
+          renderImg(images);
       }
     })
     .catch(error => console.log(error))

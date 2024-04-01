@@ -25,7 +25,7 @@
 }
 
 .formForInput {
-  gap: 8px;
+  gap: 10px;
   display: flex;
   justify-content: center;
 }
@@ -92,7 +92,8 @@
 }
 
 .imgOfUser {
-  height: 152px;
+  height: auto;
+  /* height: 152px; */
   width: 360px;
 }
 
