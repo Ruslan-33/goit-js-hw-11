@@ -63,6 +63,11 @@
   border: 1px #6C8CFF solid;
 }
 
+.buttonForInput:active {
+  background-color: yellow;
+  color: blue;
+}
+
 .blockForAllElements {
   width: calc((100% / 5) - 20px);
   border: 1px black solid;
