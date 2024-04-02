@@ -47,7 +47,6 @@ export function renderImg(images) {                        // Рендер фо�
           </ul>
           </div>
         </div>`;
-        wordOfUser = "";
     })
     .join('');
   userList.insertAdjacentHTML('beforeend', markupImg);

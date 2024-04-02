@@ -20,13 +20,14 @@ const lightbox = new SimpleLightbox('.gallery a', {   // Великі карти
 });
 
 buttonForInput.addEventListener('click', event => {   // Надсилання запиту на сервер
-  loaderF();
   event.preventDefault();
+  loaderF();
   userList.innerHTML = '';
   setTimeout(() => {
     wordOfUser = inputOfWords.value.trim();
     checkInputValidity();
   }, 2000);
+  // inputOfWords.value = '';
 });
 
 function checkInputValidity() {                   // Перевірка валідності запиту
@@ -50,6 +51,7 @@ function checkInputValidity() {                   // Перевірка валі
     })
     .catch(error => console.log(error))
     .finally(() => spanElementRem());
+    inputOfWords.value = '';
 }
 
 function renderImg(images) {                        // Рендар фото в браузері
